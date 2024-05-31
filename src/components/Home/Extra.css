@@ -1,0 +1,14 @@
+.img-circle {
+    border-radius: 50%;
+    transition: transform 0.5s;
+  }
+  
+.img-circle.rotate {
+    transform: rotate(360deg);
+}
+
+.image-wrapper {
+  display: inline-block;
+  cursor: pointer; /* Ensure the wrapper also has cursor pointer */
+}
+  
