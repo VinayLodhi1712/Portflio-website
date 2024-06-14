@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
@@ -17,7 +16,7 @@ function Footer() {
           <h3>Designed and Developed by Vinay Anand Lodhi</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright © {year} VAL</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
