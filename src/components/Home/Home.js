@@ -9,7 +9,7 @@ import anotherImage from "../../Assets/home-main.svg"; // Add your second image 
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-
+import "./Extra.css";
 function Home() {
   const [isRotated, setIsRotated] = useState(false);
   const [currentImage, setCurrentImage] = useState(logo2);

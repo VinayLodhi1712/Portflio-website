@@ -38,19 +38,20 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex" >
+        <div className="d-flex justify-content-center align-items-center">
+        <Navbar.Brand href="/" className="d-flex " >
           <div
-            className="d-flex align-items-center gap-2"
+            className="d-flex align-items-center"
             onClick={() => {
               window.scrollTo(0, 0);
             }}>
             <img src={logo2} className="img-fluid logo
         object-contain"  alt="brand" />
             <p
-              className="text-white text-[18px]  mt-4 
+              className="text-white text-[15px]  mt-4 
         font-bold cursor-pointer flex"
             >
-              MERN Stack Developer&nbsp; <span className="d-sm-block d-none"></span>
+              MERN Stack Developer&nbsp;
             </p></div>
 
         </Navbar.Brand>
@@ -64,10 +65,10 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        </div>
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-           
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -104,10 +105,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/contact"
+                to="/highlights"
                 onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Contact
+                <ImBlog style={{ marginBottom: "2px" }} /> Highlights
               </Nav.Link>
             </Nav.Item>
 

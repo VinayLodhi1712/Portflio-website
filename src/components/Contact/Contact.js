@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import emailjs from "emailjs-com";
 import './Contact.css'; // Importing the CSS file
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaDiscord } from "react-icons/fa";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn, FaDiscord } from "react-icons/fa";
+import logo2 from "../../Assets/logo2.png";
 function Contact() {
-  const [width, setWidth] = useState(1200);
+  const [isRotated, setIsRotated] = useState(false);
+  const [currentImage, setCurrentImage] = useState(logo2);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
-
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -50,67 +44,75 @@ function Contact() {
 
   return (
     <div>
-      <Container fluid className="contact-section">
-        <div className="centerdiv" >
-          <div style={{ width: "70%" }}>
+      <Container fluid className="margin mt">
+      
+        <Row className="justify-content-center">
+          <Col md={8}>
+            
             <Container className="contact-form-container">
-              <h2>Contact Me</h2>
+            <h3 className="left secondary">Get in touch</h3>
+            <h2 className="margin white">Contact Me</h2>
+            <img
+                src={currentImage}
+                alt="home pic"
+                className={`marginbottom img-fluid img-circle ${isRotated ? "rotate" : ""}`}
+                style={{ maxHeight: "150px"}}
+               
+              />
               <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="formName">
-                  <div className="form-layout centerdiv" style={{padding:"1rem"}}>
-                    <div style={{ width: "20%" }}>
-                      <Form.Label>Name</Form.Label>
-                    </div>
-                    <div style={{ width: "70%" }}>
+                  <Row className="align-items-center">
+                    <Col xs={12} md={3}>
+                      <Form.Label>Your Name</Form.Label>
+                    </Col>
+                    <Col xs={12} md={9}>
                       <Form.Control
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="What's your good name?"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         required
                       />
-                    </div>
-
-                  </div>
+                    </Col>
+                  </Row>
                 </Form.Group>
 
                 <Form.Group controlId="formEmail">
-                  <div className="form-layout centerdiv" style={{ padding: "1rem" }}>
-                    <div style={{ width: "20%" }}>
-                      <Form.Label>Email</Form.Label>
-                    </div>
-                    <div style={{ width: "70%" }}>
+                  <Row className="align-items-center">
+                    <Col xs={12} md={3}>
+                      <Form.Label>Your Email</Form.Label>
+                    </Col>
+                    <Col xs={12} md={9}>
                       <Form.Control
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="What's your web address?"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
                         required
                       />
-                    </div>
-
-                  </div>
+                    </Col>
+                  </Row>
                 </Form.Group>
 
                 <Form.Group controlId="formMessage">
-                  <div className="form-layout centerdiv" style={{ padding: "1rem" }}>
-                    <div style={{ width: "20%" }}>
-                      <Form.Label>Message</Form.Label>
-                    </div>
-                    <div style={{ width: "70%" }}>
+                  <Row className="align-items-center">
+                    <Col xs={12} md={3}>
+                      <Form.Label>Your Message</Form.Label>
+                    </Col>
+                    <Col xs={12} md={9}>
                       <Form.Control
                         as="textarea"
                         rows={3}
-                        placeholder="Enter your message"
+                        placeholder="Go ahead..what you want to say..?"
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
                         required
                       />
-                    </div>
-                  </div>
+                    </Col>
+                  </Row>
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
@@ -118,60 +120,10 @@ function Contact() {
                 </Button>
               </Form>
             </Container>
-          </div>
-        </div>
-        <div md={12} className="home-about-social">
-        <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/VinayLodhi1712"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/VinayLodhi1712"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/vinay-anand-lodhi-5694b1234"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://discordapp.com/users/VinayLodhi1712"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <FaDiscord/>
-                </a>
-              </li>
-            </ul>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </div>
-
-
   );
 }
 
