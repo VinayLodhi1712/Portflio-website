@@ -1,6 +1,7 @@
 import hunt from "../../Assets/hunt.jpg";
 import gssoc from "../../Assets/gssoc.jpg";
 import imc from "../../Assets/imc.jpg";
+import lt from "../../Assets/lt.jpg";
 import era from "../../Assets/era.png";
 import iips from "../../Assets/iips.png";
 import hack from "../../Assets/hack.png";
@@ -49,6 +50,19 @@ const experiences = [
   },
   {
     id: 3,
+    img: lt,
+    role: "Problem Solver",
+    company: "Leetcode",
+    date: "Jan 2024",
+    desc: "Solving questions on Leetcode plateform to enhance my problem solving with completing Data Structure and Algroithms.",
+    skills: [
+      "Problem Solving",
+      "DSA",
+      "Algorithms",
+    ],
+  },
+  {
+    id: 4,
     img: imc,
     role: "Intern",
     company: "Indore Municipal Corporation",
@@ -60,7 +74,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: iips,
     role: "Workshop on Internet of things",
     company: "IIPS and Upsys solution",
@@ -73,7 +87,7 @@ const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     img: hack,
     role: "5 ⭐ and Certifications on Hackerrank",
     company: "Hackerrank",
