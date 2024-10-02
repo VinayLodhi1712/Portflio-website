@@ -5,20 +5,19 @@ import lt from "../../Assets/lt.jpg";
 import era from "../../Assets/era.png";
 import iips from "../../Assets/iips.png";
 import hack from "../../Assets/hack.png";
+import cloud from "../../Assets/cloud.png"
 const experiences = [
   {
     id: 0,
-    img: hunt,
-    role: "Hackhive Hackathon (Team Leader)",
-    company: "Techhunterssss",
-    date: "Mar-2024",
-    desc: "This is my first  hackathon which i have in my life with the responsibilty of team leader.Here we created a web app using HTML CSS Tailwind and mongodb as Backend functionality",
+    img: cloud,
+    role: "Google Cloud Arcade Facilitator",
+    company: "Google Cloud",
+    date: "July-2024 to Sept-2024",
+    desc: "I was selected as a facilitator in Google Cloud Arcade Facilitator'24 program and under this program I achieved 1st milestone and help over 300+ students to help them to start their google cloud journey.",
     skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "Node.js",
-      "TailwindCSS",
+      "Google Cloud",
+      "Leadership",
+      "Community Management"
     ],
   },
   
@@ -97,6 +96,21 @@ const experiences = [
       "Java",
       "Problem Solving",
       "MySql"
+    ],
+  },
+  {
+    id: 7,
+    img: hunt,
+    role: "Hackhive Hackathon (Team Leader)",
+    company: "Techhunterssss",
+    date: "Mar-2024",
+    desc: "This is my first  hackathon which i have in my life with the responsibilty of team leader.Here we created a web app using HTML CSS Tailwind and mongodb as Backend functionality",
+    skills: [
+      "React",
+      "MongoDB",
+      "Node.js",
+      "TailwindCSS",
+      "Postman"
     ],
   },
   ];
