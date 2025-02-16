@@ -10,7 +10,7 @@ import iot from "../../Assets/Projects/iot.png";
 import Talkofcode from "../../Assets/Projects/talkofcode.png";
 import tempconverter from "../../Assets/Projects/tempconverter.png";
 import books1 from "../../Assets/Projects/books1.png";
-
+import music from "../../Assets/Projects/music.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -43,6 +43,17 @@ function Projects() {
               description="This is a online book store e-commerce plateform which have basic functionalities of an ecommerce plateform made up using MERN Stack technology. It have basic CRUD operations for an author and users can buy books and add to cart books."
               ghLink="https://github.com/VinayLodhi1712/mern-book-store"
               demoLink="https://mern-book-store-qn8t.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={music}
+              isBlog={false}
+              title="Music"
+              description="Dive into our comprehensive music courses and transform your musical journey today. Whether you are a beginner or looking to refine your skills, join us to unlock your true potential."
+              ghLink="https://github.com/VinayLodhi1712/Music-Art-Nextjs"
+              demoLink="https://music-art-nextjs.vercel.app/"
             />
           </Col>
 

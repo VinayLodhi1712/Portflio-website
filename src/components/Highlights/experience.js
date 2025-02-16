@@ -5,106 +5,123 @@ import lt from "../../Assets/lt.jpg";
 import era from "../../Assets/era.png";
 import iips from "../../Assets/iips.png";
 import hack from "../../Assets/hack.png";
-import cloud from "../../Assets/cloud.png"
+import cloud from "../../Assets/cloud.png";
+import vozi from "../../Assets/vozi.png"; // Add Vozi logo if available
+
 const experiences = [
   {
     id: 0,
+    img: vozi,
+    role: "Software Engineering Intern",
+    company: "Vozi (Remote)",
+    date: "Jan 2025 - Present",
+    desc: "Working as a full-stack developer at Vozi, building and maintaining scalable web applications using React, Next.js, TypeScript, and integrating RESTful APIs for seamless user experience.",
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "REST APIs"
+    ],
+  },
+  {
+    id: 1,
     img: cloud,
     role: "Google Cloud Arcade Facilitator",
     company: "Google Cloud",
-    date: "July-2024 to Sept-2024",
-    desc: "I was selected as a facilitator in Google Cloud Arcade Facilitator'24 program and under this program I achieved 1st milestone and help over 300+ students to help them to start their google cloud journey.",
+    date: "July 2024 - Sept 2024",
+    desc: "I was selected as a facilitator in Google Cloud Arcade Facilitator'24 program and under this program I achieved 1st milestone and helped over 300+ students start their Google Cloud journey.",
     skills: [
       "Google Cloud",
       "Leadership",
       "Community Management"
     ],
   },
-  
   {
-    id: 1,
+    id: 2,
     img: gssoc,
     role: "Open Source Contributor",
     company: "GirlScript Summer of Code",
-    date: "May-2024",
-    desc: "Contributing to different open-source projects and learn from industry experts",
+    date: "May 2024",
+    desc: "Contributing to different open-source projects and learning from industry experts.",
     skills: [
       "Open Source",
       "Project Management",
-      "Real Time Collaboration",
-    ],
-  },
-  {
-    id: 2,
-    img: era,
-    role: "Introduction to Data Analysis Course.",
-    company: "Coursera",
-    date: "April 2024 - May-2024",
-    desc: "Completed comprehensive Introduction to Data Analysis course covering fundamental concepts. Applied learned concepts through worksheets.",
-    skills: [
-      "Excel",
-      "R",
-      "SQL",
+      "Real Time Collaboration"
     ],
   },
   {
     id: 3,
-    img: lt,
-    role: "Problem Solver",
-    company: "Leetcode",
-    date: "Jan 2024",
-    desc: "Solving questions on Leetcode plateform to enhance my problem solving with completing Data Structure and Algroithms.",
+    img: era,
+    role: "Introduction to Data Analysis Course",
+    company: "Coursera",
+    date: "April 2024 - May 2024",
+    desc: "Completed comprehensive Introduction to Data Analysis course covering fundamental concepts. Applied learned concepts through worksheets.",
     skills: [
-      "Problem Solving",
-      "DSA",
-      "Algorithms",
+      "Excel",
+      "R",
+      "SQL"
     ],
   },
   {
     id: 4,
-    img: imc,
-    role: "Intern",
-    company: "Indore Municipal Corporation",
-    date: "June 2023 - Sept-2023",
-    desc: "Get knowledge about how govt authorities works. Develop soft skills and got a project to work in a three month internship programmer under IMC Indore.",
+    img: lt,
+    role: "Problem Solver",
+    company: "Leetcode",
+    date: "Jan 2024",
+    desc: "Solving questions on Leetcode platform to enhance my problem-solving skills, completing Data Structures and Algorithms.",
     skills: [
-      "Communication Skills",
-      "Excel",
+      "Problem Solving",
+      "DSA",
+      "Algorithms"
     ],
   },
   {
     id: 5,
-    img: iips,
-    role: "Workshop on Internet of things",
-    company: "IIPS and Upsys solution",
-    date: "Feb 2024 - Feb-2024",
-    desc: "Get knowledge about Internet of things, its components, sensors, actuators and all. These 17 days workshop ends with developing an IOT project named 'Digilock'. ",
+    img: imc,
+    role: "Intern",
+    company: "Indore Municipal Corporation",
+    date: "June 2023 - Sept 2023",
+    desc: "Gained knowledge about how government authorities work. Developed soft skills and worked on a project during a three-month internship at IMC Indore.",
     skills: [
-      "Sensors",
-      "Arduino",
-      "Internet of things"
+      "Communication Skills",
+      "Excel"
     ],
   },
   {
     id: 6,
-    img: hack,
-    role: "5 ⭐ and Certifications on Hackerrank",
-    company: "Hackerrank",
-    date: "May 2023",
-    desc: "Got 5 ⭐ in Java on Hackerrank plateform. Got intermediate certificate for MySql on Hackerrank. Also badge for Problem Solving.",
+    img: iips,
+    role: "Workshop on Internet of Things",
+    company: "IIPS and Upsys Solution",
+    date: "Feb 2024",
+    desc: "Gained knowledge about IoT, its components, sensors, actuators, and more. The 17-day workshop concluded with developing an IoT project named 'Digilock'.",
     skills: [
-      "Java",
-      "Problem Solving",
-      "MySql"
+      "Sensors",
+      "Arduino",
+      "Internet of Things"
     ],
   },
   {
     id: 7,
+    img: hack,
+    role: "5 ⭐ and Certifications on Hackerrank",
+    company: "Hackerrank",
+    date: "May 2023",
+    desc: "Achieved 5 ⭐ in Java on Hackerrank platform, received an intermediate certificate for MySQL, and earned a badge for Problem Solving.",
+    skills: [
+      "Java",
+      "Problem Solving",
+      "MySQL"
+    ],
+  },
+  {
+    id: 8,
     img: hunt,
     role: "Hackhive Hackathon (Team Leader)",
     company: "Techhunterssss",
-    date: "Mar-2024",
-    desc: "This is my first  hackathon which i have in my life with the responsibilty of team leader.Here we created a web app using HTML CSS Tailwind and mongodb as Backend functionality",
+    date: "Mar 2024",
+    desc: "Led a team in my first hackathon, developing a web app using HTML, CSS, Tailwind, and MongoDB for backend functionality.",
     skills: [
       "React",
       "MongoDB",
@@ -113,5 +130,6 @@ const experiences = [
       "Postman"
     ],
   },
-  ];
-  export {experiences};
+];
+
+export { experiences };
