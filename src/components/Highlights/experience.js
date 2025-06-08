@@ -6,8 +6,8 @@ import era from "../../Assets/era.png";
 import iips from "../../Assets/iips.png";
 import hack from "../../Assets/hack.png";
 import cloud from "../../Assets/cloud.png";
-import vozi from "../../Assets/vozi.png"; // Add Vozi logo if available
-
+import vozi from "../../Assets/vozi.png";
+import outlier from "../../Assets/outlier.jpg"
 const experiences = [
   {
     id: 0,
@@ -25,8 +25,23 @@ const experiences = [
       "REST APIs"
     ],
   },
-  {
+   {
     id: 1,
+    img: outlier,
+    role: "Freelancer",
+    company: "Outlier (Remote)",
+    date: "April 2025 - Present",
+    desc: "Refined AI-generated code to enhance performance and UI quality. Currently working as a Reviewer, responsible for evaluating and validating frontend implementations by peers. Contributed to AI-assisted development workflows with a strong focus on usability, maintainability, and performance optimization. ",
+    skills: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "tailwindcss",
+      "communication",
+    ],
+  },
+  {
+    id: 2,
     img: cloud,
     role: "Google Cloud Arcade Facilitator",
     company: "Google Cloud",
@@ -39,7 +54,7 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: gssoc,
     role: "Open Source Contributor",
     company: "GirlScript Summer of Code",
@@ -52,7 +67,7 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     img: era,
     role: "Introduction to Data Analysis Course",
     company: "Coursera",
@@ -65,7 +80,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     img: lt,
     role: "Problem Solver",
     company: "Leetcode",
@@ -78,7 +93,7 @@ const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     img: imc,
     role: "Intern",
     company: "Indore Municipal Corporation",
@@ -90,7 +105,7 @@ const experiences = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     img: iips,
     role: "Workshop on Internet of Things",
     company: "IIPS and Upsys Solution",
@@ -103,7 +118,7 @@ const experiences = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     img: hack,
     role: "5 ⭐ and Certifications on Hackerrank",
     company: "Hackerrank",
@@ -116,7 +131,7 @@ const experiences = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     img: hunt,
     role: "Hackhive Hackathon (Team Leader)",
     company: "Techhunterssss",

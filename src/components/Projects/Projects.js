@@ -11,6 +11,7 @@ import Talkofcode from "../../Assets/Projects/talkofcode.png";
 import tempconverter from "../../Assets/Projects/tempconverter.png";
 import books1 from "../../Assets/Projects/books1.png";
 import music from "../../Assets/Projects/music.png"
+import Nagar from "../../Assets/Projects/Nagar.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -33,6 +34,17 @@ function Projects() {
               demoLink="https://talkofcode.vercel.app/"
             />
           </Col>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Nagar}
+              isBlog={false}
+              title="IMC Lucky Draw"
+              description="A web-based lucky draw system developed for the Indore Municipal Corporation to promote civic engagement and reward timely taxpayers. The platform features secure participant handling and a fair, randomized winner selection mechanism. Built with a focus on scalability, transparency, and ease of use for administrative workflows."
+              ghLink="https://github.com/VinayLodhi1712/IMC-Lucky-Draw"
+              demoLink="https://imc-lucky-draw.vercel.app/"
+            />
+          </Col>
           
 
           <Col md={4} className="project-card">
@@ -43,6 +55,17 @@ function Projects() {
               description="This is a online book store e-commerce plateform which have basic functionalities of an ecommerce plateform made up using MERN Stack technology. It have basic CRUD operations for an author and users can buy books and add to cart books."
               ghLink="https://github.com/VinayLodhi1712/mern-book-store"
               demoLink="https://mern-book-store-qn8t.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dashboard}
+              isBlog={false}
+              title="Dashboard Page"
+              description="Create a Dashboard page with Frontend Development to showcase my frontend development skills. It is a task of an online workshop of frontend development which i attended and done the task successfullly."
+              ghLink="https://github.com/VinayLodhi1712/NextjsDashboard"
+              demolinnk="https://nextjs-dashboard-hy2.vercel.app"
             />
           </Col>
 
@@ -80,15 +103,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={dashboard}
-              isBlog={false}
-              title="Dashboard Page"
-              description="Create a Dashboard page with Frontend Development to showcase my frontend development skills. It is a task of an online workshop of frontend development which i attended and done the task successfullly."
-              ghLink="https://github.com/VinayLodhi1712/dashboard"
-            />
-          </Col>
+          
 
           
           <Col md={4} className="project-card">

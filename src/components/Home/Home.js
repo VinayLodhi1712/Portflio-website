@@ -9,6 +9,8 @@ import anotherImage from "../../Assets/home-main.svg"; // Add your second image 
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import profile from "../../Assets/profile.jpg";
+import vinayprofile from "../../Assets/vinayprofile.jpg"
 import "./Extra.css";
 function Home() {
   const [isRotated, setIsRotated] = useState(false);
